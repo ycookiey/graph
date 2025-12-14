@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro';
+import AppHome from '../../ui/app/AppHome';
+
+export const prerender = false;
+---
+
+<Base title="App" noindex>
+  <AppHome client:load />
+</Base>

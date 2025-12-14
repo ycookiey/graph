@@ -1,0 +1,13 @@
+---
+import Base from '../../../layouts/Base.astro';
+import AppInput from '../../../ui/app/AppInput';
+
+export const prerender = false;
+
+const authResult = await (Astro.locals as any).auth?.();
+const userId = authResult?.userId ?? null;
+---
+
+<Base title="Input" noindex>
+  <AppInput userId={userId} client:load />
+</Base>

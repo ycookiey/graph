@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { SignIn } from '@clerk/astro/components';
+
+export const prerender = false;
+---
+
+<Base title="Sign in" noindex>
+  <main class="sign-in-page">
+    <SignIn />
+  </main>
+</Base>
