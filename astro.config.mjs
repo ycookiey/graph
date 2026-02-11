@@ -32,6 +32,9 @@ export default defineConfig({
     resolve: {
       alias: {
         async_hooks: 'node:async_hooks',
+        ...(process.env.NODE_ENV === 'production' && {
+          'react-dom/server': 'react-dom/server.edge',
+        }),
       },
     },
   },
