@@ -2,6 +2,12 @@
   "name": "graph",
   "version": "0.1.0",
   "private": true,
+  "description": "Record one number a day and view it as a line chart",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycookiey/graph.git"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
