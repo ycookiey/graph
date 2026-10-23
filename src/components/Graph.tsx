@@ -14,7 +14,6 @@ interface GraphProps {
 }
 
 export default function Graph({ data, theme }: GraphProps) {
-  // Format date for display (just day number)
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr)
     return date.getDate().toString()
