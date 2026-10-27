@@ -1,7 +1,5 @@
 'use client'
 
-import { useState } from 'react'
-
 type Period = 7 | 30 | 365
 
 interface PeriodSelectorProps {

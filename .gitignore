@@ -21,6 +21,10 @@
 /.astro/
 /dist/
 
+# wrangler
+/.wrangler/
+.dev.vars*
+
 # production
 /build
 
